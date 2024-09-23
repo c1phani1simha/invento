@@ -19,6 +19,9 @@ const prisma = new client_1.PrismaClient();
 //this is the code
 //that we actually write to seed the fresh data
 //this section of the code will actually delete all the previous data in the database and then seed the fresh data
+
+
+
 function deleteAllData(orderedFileNames) {
     return __awaiter(this, void 0, void 0, function* () {
         const modelNames = orderedFileNames.map((fileName) => {
